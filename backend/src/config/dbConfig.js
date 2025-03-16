@@ -14,4 +14,4 @@ import { DEV_DB_URL, NODE_ENV, PROD_DB_URL } from './serverConfig.js';
    } catch (error) {
      console.log('Error connecting to database', error);
    }
- }
+ } 
