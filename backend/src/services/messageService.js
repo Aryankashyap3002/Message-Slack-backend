@@ -30,3 +30,8 @@ import { isUserMemberOfWorkspace } from './workspaceService.js';
    );
    return messages;
  };
+
+ export const createMessageService = async (message) => {
+  const newMessage = await messageRepository.create(message);
+  return newMessage;
+};
