@@ -123,7 +123,7 @@ import crudRepository from './crudRepository.js';
   fetchAllWorkspaceByMemberId: async function (memberId) {
     const workspaces = await Workspace.find({
       'members.memberId': memberId
-    }).populate('members.memberId', 'username email avatart');
+    }).populate('members.memberId', 'username email avatar');
 
     return workspaces;
   }
