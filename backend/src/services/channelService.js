@@ -10,7 +10,7 @@ import ClientError from '../utils/errors/clientError.js';
      const channel =
        await channelRepository.getChannelWithWorkspaceDetails(channelId);
  
-     console.log(channel);
+    //  console.log(channel);
  
      if (!channel || !channel.workspaceId) {
        throw new ClientError({

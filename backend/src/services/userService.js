@@ -66,7 +66,7 @@ import ValidationError from '../utils/errors/validationError.js';
     user.verificationTokenExpiry = null;
     await user.save();
 
-    console.log(user);
+    // console.log(user);
 
     return user;
   } catch (error) {
