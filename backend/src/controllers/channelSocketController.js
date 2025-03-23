@@ -5,7 +5,7 @@ import { JOIN_CHANNEL } from '../utils/common/eventConstants.js';
      const roomId = data.channelId;
      socket.join(roomId);
      console.log(`User ${socket.id} joined the channel: ${roomId}`);
-     cb({
+     cb?.({
        success: true,
        message: 'Successfully joined the channel',
        data: roomId
