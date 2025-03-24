@@ -23,7 +23,8 @@ import mongoose from 'mongoose';
      ref: 'Workspace',
      required: [true, 'Workspace ID is required']
    }
- });
+ }, { timestamps: true }
+);
  
  const Message = mongoose.model('Message', messageSchema);
  

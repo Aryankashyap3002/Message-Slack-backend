@@ -5,6 +5,6 @@ import express from 'express';
  
  const router = express.Router();
  
- router.get('/messages/:channelId', isAuthenticated, getMessages);
+ router.get('/:channelId', isAuthenticated, getMessages);
  
  export default router;
